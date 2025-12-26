@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ajustes para scroll suave y evitar rebote elástico en iOS si se desea */
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  @apply bg-white;
+  /* Previene el "pull-to-refresh" accidental en Chrome Android */
+  overscroll-behavior-y: none; 
+}
